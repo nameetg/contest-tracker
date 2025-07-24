@@ -12,7 +12,7 @@ This project is a Contest Tracker that fetches and displays upcoming and recent 
 On app load, it makes an API call to Clist to fetch <b>upcoming contests</b> across selected platforms (codeforces, leetcode, codechef, atcoder) and stores them in Redux state.<br>
 <b>2. Fetching Past Contests (last 60 days)</b> <br>
 The app also fetches <b>past contests</b> (filtered between current date and 60 days prior) for each platform separately and merges them into one list.
-### Sorting & Display
+### 3. Sorting & Display
 
 - Upcoming contests are sorted by start time  
 - Past contests are sorted by most recent  
