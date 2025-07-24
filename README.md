@@ -2,17 +2,17 @@
 This project is a Contest Tracker that fetches and displays upcoming and recent programming contests from multiple platforms using the [Clist API](https://clist.by/).<br>
 
 <b>🔧 Tech Stack</b> <br>
-<b>Frontend:</b> React.js, Tailwind CSS
-<b>State Management:</b> Redux Toolkit
-<b>API:</b> Clist.by
-<b>Deployment:</b> Vercel
+<b>Frontend:</b> React.js, Tailwind CSS<br>
+<b>State Management:</b> Redux Toolkit<br>
+<b>API:</b> Clist.by<br>
+<b>Deployment:</b> Vercel<br>
 
 <b>⚙️ Functionality</b> <br>
 <b>1. Fetching Upcoming Contests</b> <br>
 On app load, it makes an API call to Clist to fetch <b>upcoming contests</b> across selected platforms (codeforces, leetcode, codechef, atcoder) and stores them in Redux state.<br>
 <b>2. Fetching Past Contests (last 60 days)</b> <br>
 The app also fetches <b>past contests</b> (filtered between current date and 60 days prior) for each platform separately and merges them into one list.<br>
-<b>3. Sorting & Display</b><br>
+<b>3. Sorting & Display</b>
 <ul>
   <li>Upcoming contests are sorted by start time</li>
   <li>Past contests are sorted by most recent</li>
