@@ -1,17 +1,25 @@
-# React + Vite
+<b>How It Works</b> <br>
+This project is a Contest Tracker that fetches and displays upcoming and recent programming contests from multiple platforms using the [Clist API](https://clist.by/).<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<b>🔧 Tech Stack</b> <br>
+<b>Frontend:</b> React.js, Tailwind CSS
+<b>State Management:</b> Redux Toolkit
+<b>API:</b> Clist.by
+<b>Deployment:</b> Vercel
 
-Currently, two official plugins are available:
+<b>⚙️ Functionality</b> <br>
+<b>1. Fetching Upcoming Contests</b> <br>
+On app load, it makes an API call to Clist to fetch <b>upcoming contests</b> across selected platforms (codeforces, leetcode, codechef, atcoder) and stores them in Redux state.<br>
+<b>2. Fetching Past Contests (last 60 days)</b> <br>
+The app also fetches <b>past contests</b> (filtered between current date and 60 days prior) for each platform separately and merges them into one list.
+### Sorting & Display
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upcoming contests are sorted by start time  
+- Past contests are sorted by most recent  
+- The data is displayed using clean UI cards
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# contest-tracker" 
-"# contest-tracker" 
+
 ![Screenshot 2025-03-24 200826](https://github.com/user-attachments/assets/f348693f-8d69-4bfd-9b78-05af3c814df3)
 
 ![Screenshot 2025-03-24 200843](https://github.com/user-attachments/assets/9287e7c9-56c8-45e8-b1de-0ad4eb5325f8)
