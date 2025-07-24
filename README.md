@@ -1,6 +1,8 @@
 <b>How It Works</b> <br>
 This project is a Contest Tracker that fetches and displays upcoming and recent programming contests from multiple platforms using the [Clist API](https://clist.by/).<br>
 
+<b>Live Demo:</b> https://contest-tracker-sepia.vercel.app/<br><br>
+
 <b>🔧 Tech Stack</b> <br>
 <b>Frontend:</b> React.js, Tailwind CSS<br>
 <b>State Management:</b> Redux Toolkit<br>
@@ -13,6 +15,7 @@ On app load, it makes an API call to Clist to fetch <b>upcoming contests</b> acr
 <b>2. Fetching Past Contests (last 60 days)</b> <br>
 The app also fetches <b>past contests</b> (filtered between current date and 60 days prior) for each platform separately and merges them into one list.<br>
 <b>3. Sorting & Display</b>
+
 <ul>
   <li>Upcoming contests are sorted by start time</li>
   <li>Past contests are sorted by most recent</li>
@@ -20,7 +23,6 @@ The app also fetches <b>past contests</b> (filtered between current date and 60 
 </ul>
 
 <br>
-
 
 ![Screenshot 2025-03-24 200826](https://github.com/user-attachments/assets/f348693f-8d69-4bfd-9b78-05af3c814df3)
 
@@ -31,8 +33,10 @@ The app also fetches <b>past contests</b> (filtered between current date and 60 
 ![Screenshot 2025-03-24 200938](https://github.com/user-attachments/assets/631b2f41-d470-4e51-a810-9e12e07d5b56)
 
 ## Installation
+
 ```sh
 npm install
 npm run dev
 
 
+```
